@@ -1,0 +1,7 @@
+2.1 The first for loop, checks for all entities that have a motion and position component handle.
+2.2 The second for loop, checks for all entities that have a position and parent component handle.
+2.3 It is called in Game::Update() m_systemManager.update<MovementSystem>(MS_PER_UPDATE);
+2.4 The purpose of the background component is to render a background on the screen
+	The BackgroundCreator is assigned the background entity 
+2.5 The base of the tank is not drawn. In the render system, when rendering the sprites, it checks
+		for a display and position component. The bast tank no longer has a display component.
